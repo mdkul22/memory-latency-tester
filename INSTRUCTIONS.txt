@@ -1,0 +1,12 @@
+To run a single run of the cachetime.c,
+1. Run make (have g++ in system)
+2. Run ./cachetime using options
+Example: ./cachetime -t:<threads> -s/-r <Seq Or Random> --reps:<no. of reps> --log2array:<2^log2array size array>
+
+To run multiple runs you can use multirun.py to run a
+range of arrays with a constant no. of threads and whether you want to run modify or not.
+Example: python3 multirun.py --minlg2 <minimum arr size > --maxlg2 <max arr size> -t <no. of threads> <-s/-r>
+
+You can do the entire run for all types of runs using
+python autorun.py and use generatePlots.py for getting 
+the plots. 
